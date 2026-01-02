@@ -16,7 +16,6 @@ body {
 }
 
 #conversion-card{
-height: 30%;
 display: flex;
 flex-direction: column;
 justify-content: center; 
@@ -29,7 +28,6 @@ border-radius: 10px 10px 0px  0px;
 
 #explanation-card{
     background: #1F2937;
-    height: 444px;
     padding: 20px;
     margin: 0px;
     border-radius: 0px 0px 10px  10px;
