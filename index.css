@@ -4,12 +4,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: black;
+    color: white;
 }
 
 
 #container{
     width: 550px;
     height: 729px;
+    border-radius: 10;
 }
 
 #conversion-card{
@@ -20,11 +23,16 @@ justify-content: center;
 align-items: center;
 background: #6943FF;
 gap: 20px;
+padding-bottom: 20px;
+border-radius: 10px 10px 0px  0px;
 }
 
 #explanation-card{
     background: #1F2937;
-    height: 444px
+    height: 444px;
+    padding: 20px;
+    margin: 0px;
+    border-radius: 0px 0px 10px  10px;
 }
 
 .unit-measured p{
@@ -48,5 +56,15 @@ margin: 20px;
     height: 83px;
     width: 117px;
     border: 1px solid white;
-    display: flex
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+#convertBtn{
+    width: 117px;
+    height: 42px;
 }
