@@ -13,10 +13,17 @@ const conversionParas = document.querySelectorAll('.unit-measured');
 
 convertBtn.addEventListener("click", function(){
     const input = Number(userInput.value)
-    conversionParas[0].innerHTML = `<p>${input} meters = ${(metersToFeet(input).toFixed(2))} feet | ${input} feet = ${feetToMeters(input).toFixed(2)} meters</p>`
-    conversionParas[1].innerHTML += `<p>${input} litres = ${litresToGallons(input)} gallons | ${input} gallons = ${gallonsToLitres(input)} litres</p>`
-    conversionParas[2].innerHTML += `<p>${input} kilos = ${kilosToPounds(input)} pounds | ${input} pounds = ${poundsToKilos(input)} kilos</p>`
-
+    if(input === 1){
+        conversionParas[0].innerHTML = `<p>${input} meter = ${(metersToFeet(input).toFixed(2))} feet | ${input} foot = ${feetToMeters(input).toFixed(2)} meters</p>` 
+    } else {conversionParas[0].innerHTML = `<p>${input} meters = ${(metersToFeet(input).toFixed(2))} feet | ${input} feet = ${feetToMeters(input).toFixed(2)} meters</p>`}
+    
+    if(input === 1){
+        conversionParas[1].innerHTML = `<p>${input} litre = ${litresToGallons(input).toFixed(2)} gallons | ${input} gallon = ${gallonsToLitres(input).toFixed(2)} litres</p>`
+    } else {conversionParas[1].innerHTML = `<p>${input} litres = ${litresToGallons(input).toFixed(2)} gallons | ${input} gallons = ${gallonsToLitres(input).toFixed(2)} litres</p>`}
+    
+    if (input === 1){
+        conversionParas[2].innerHTML = `<p>${input} kilo = ${kilosToPounds(input).toFixed(2)} pounds | ${input} pound = ${poundsToKilos(input).toFixed(2)} kilos</p>`
+    } else {conversionParas[2].innerHTML = `<p>${input} kilos = ${kilosToPounds(input).toFixed(2)} pounds | ${input} pounds = ${poundsToKilos(input).toFixed(2)} kilos</p>`}
 })
 
 function metersToFeet(num){
@@ -44,17 +51,5 @@ function poundsToKilos(num) {
 }
 
 
-/*function lengthConversion(){
-
-    let toFeet = userInput.value * 3.281
-    let feetToMeters = userInput.value * 0.3048
-
-    renderLength(userInput, "Meters", toFeet, "Feet", userInput, "Feet", feetToMeters, "Meters")
-}
-
-function renderLength(userInput, unit1, conversion1, unit2, conversion2){
-return `${Number(userInput.value)} ${unit1} = ${conversion1} ${unit2} | ${userInput.value} ${unit2} = ${Number(conversion2)} ${unit2} `
-}
-*/
 
 

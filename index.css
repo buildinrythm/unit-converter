@@ -33,15 +33,17 @@ border-radius: 10px 10px 0px  0px;
     border-radius: 0px 0px 10px  10px;
 }
 
-.unit-measured p{
+.unit-measured{
 color: white;
 }
 
-.unit-measured h2{
-    color: #CCC1FF
+
+.unit-measured-container h2{
+    color: #CCC1FF;
+   
 }
 
-.unit-measured{
+.unit-measured-container{
     display: flex;
 flex-direction: column;
 justify-content: center; 
@@ -67,3 +69,4 @@ margin: 20px;
     width: 117px;
     height: 42px;
 }
+
