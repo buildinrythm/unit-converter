@@ -1,3 +1,52 @@
 body {
     margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#container{
+    width: 550px;
+    height: 729px;
+}
+
+#conversion-card{
+height: 30%;
+display: flex;
+flex-direction: column;
+justify-content: center; 
+align-items: center;
+background: #6943FF;
+gap: 20px;
+}
+
+#explanation-card{
+    background: #1F2937;
+    height: 444px
+}
+
+.unit-measured p{
+color: white;
+}
+
+.unit-measured h2{
+    color: #CCC1FF
+}
+
+.unit-measured{
+    display: flex;
+flex-direction: column;
+justify-content: center; 
+align-items: center;
+background: #273549;
+margin: 20px;
+}
+
+#user-input{
+    height: 83px;
+    width: 117px;
+    border: 1px solid white;
+    display: flex
 }
