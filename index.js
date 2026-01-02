@@ -10,9 +10,10 @@ const conversionParas = document.querySelectorAll('.unit-measured');
 
 
 
-
+//Convert button controls
 convertBtn.addEventListener("click", function(){
     const input = Number(userInput.value)
+    //Handle case of input 1 grammer
     if(input === 1){
         conversionParas[0].innerHTML = `<p>${input} meter = ${(metersToFeet(input).toFixed(2))} feet | ${input} foot = ${feetToMeters(input).toFixed(2)} meters</p>` 
     } else {conversionParas[0].innerHTML = `<p>${input} meters = ${(metersToFeet(input).toFixed(2))} feet | ${input} feet = ${feetToMeters(input).toFixed(2)} meters</p>`}
@@ -26,6 +27,7 @@ convertBtn.addEventListener("click", function(){
     } else {conversionParas[2].innerHTML = `<p>${input} kilos = ${kilosToPounds(input).toFixed(2)} pounds | ${input} pounds = ${poundsToKilos(input).toFixed(2)} kilos</p>`}
 })
 
+//Functions for calculations
 function metersToFeet(num){
     return (num * 3.281)
 }
